@@ -51,7 +51,7 @@ bot.command('mail', async (ctx) => {
             [
                 [Markup.button.callback('Мобильная почта iOS', 'btn_9')],
                 [Markup.button.callback('Мобильная почта Android', 'btn_10')],
-                [Markup.button.callback('Мобильная почта Outlook', 'btn_')]
+                [Markup.button.callback('Мобильная почта Outlook', 'btn_14')]
             ]
         ));
     } catch (e) {
@@ -161,6 +161,7 @@ actionBtnBot('btn_13',
 [text.print_win_4, './img/print.win/print-win-4.jpg'],
 [text.print_win_5, './img/print.win/print-win-5.jpg'],
 [text.print_win_6, './img/print.win/print-win-6.jpg'])
+actionBtnBot('btn_14', [text.outlook, false])
 
 
 bot.launch()
